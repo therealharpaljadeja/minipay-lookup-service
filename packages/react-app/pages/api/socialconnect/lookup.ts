@@ -35,7 +35,7 @@ export default async function lookup(
             });
 
             // Extract the identifier and its type from the request query
-            const identifier = req.body.handle as string;
+            const identifier = req.query.handle as string;
             const identifierType = IdentifierPrefix.PHONE_NUMBER;
 
             // Define the issuer addresses under which to perform the lookup
